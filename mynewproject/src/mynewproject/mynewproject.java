@@ -1,39 +1,29 @@
 package mynewproject;
 import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.Scanner;
-public class mynewproject{
+import java.util.LinkedList;
 
+public class mynewproject {
+	
+	
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
+		LinkedList<String> names = new LinkedList<String>();
 		
-		Scanner in = new Scanner(new File ("students.txt"));
+		names.push("Elwin");
+		names.push("sue");
+		names.push("Sally");
 		
-		List<String> students = new ArrayList<String>();
-		
+		System.out.println(names.pop());
+		System.out.println(names.removeFirst());
+		System.out.println(names.remove());
 	
-		while(in.hasNextLine()) {
-			students.add(in.nextLine());
-			
-			
-		}
-		
-		for(int i = 0; i < students.size(); i++) {
-			System.out.println("name: " + students.get(i));
-		}
-				in.close();
 	}
-		
-		
-		
-		
-		
-		
-		
-	}
-
+}
 
