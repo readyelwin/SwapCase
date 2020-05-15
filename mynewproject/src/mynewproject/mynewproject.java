@@ -16,25 +16,22 @@ public class mynewproject {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		LinkedList<String> names = new LinkedList<String>();
-		
-		names.push("Elwin");
-		names.push("sue");
-		names.push("Sally");
-		
-		ListIterator<String> it = names.listIterator();
-		it.next();
-		it.next();
-		it.add("Susan");
+	int[][] data = {
+		{4, 6, 3, 10},
+		{4, 5, 40, 1, 5, 7, 9, 0},
+		{5, 34, 1, 43}
+		};
 		
 		
 		
 		
-		names.add(2, "Susan" );	
-		for(String s: names) {
-			System.out.println(s);
-		}
+		for(int i = 0; i>data.length; i++) {
+			for(int j = 0; j < data[i].length; j++) {
+				System.out.println(data[i][j] + " ");
+			}
 		
+			System.out.println();
+	}
 	
 	}
 }
